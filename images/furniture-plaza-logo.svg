@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 12.120000000000001 73.8 42.239999999999995" style="max-height: 500px" width="73.8" height="42.239999999999995">
+  <defs>
+    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="woodGradient">
+      <stop style="stop-color:#D2691E;stop-opacity:1" offset="0%"/>
+      <stop style="stop-color:#8B4513;stop-opacity:1" offset="50%"/>
+      <stop style="stop-color:#A0522D;stop-opacity:1" offset="100%"/>
+    </linearGradient>
+  </defs>
+  
+  
+  <rect stroke-width="1" stroke="#654321" fill="url(#woodGradient)" height="25" width="40" y="20" x="15"/>
+  
+  
+  <rect fill="#8B4513" height="2" width="36" y="25" x="17"/>
+  <rect fill="#8B4513" height="2" width="36" y="32" x="17"/>
+  <rect fill="#8B4513" height="2" width="36" y="39" x="17"/>
+  
+  
+  <rect stroke-width="0.5" stroke="#654321" fill="none" height="22" width="15" y="21" x="18"/>
+  <rect stroke-width="0.5" stroke="#654321" fill="none" height="22" width="15" y="21" x="36"/>
+  
+  
+  <circle fill="#CD853F" r="1" cy="32" cx="31"/>
+  <circle fill="#CD853F" r="1" cy="32" cx="38"/>
+  
+  
+  
+  <rect stroke-width="0.5" stroke="#8B4513" fill="#D2691E" height="12" width="8" y="35" x="5"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#228B22" d="M7 35 L9 30 L11 35"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#32CD32" d="M6 35 L9 28 L12 35"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#228B22" d="M8 35 L9 26 L10 35"/>
+  
+  
+  <rect stroke-width="0.5" stroke="#8B4513" fill="#D2691E" height="12" width="8" y="35" x="57"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#228B22" d="M59 35 L61 30 L63 35"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#32CD32" d="M58 35 L61 28 L64 35"/>
+  <path stroke-width="0.5" stroke="#006400" fill="#228B22" d="M60 35 L61 26 L62 35"/>
+  
+  
+  <line stroke-width="2" stroke="#8B4513" y2="47" x2="70" y1="47" x1="0"/>
+  
+  
+  <text fill="#8B4513" font-weight="bold" font-size="12" font-family="Arial, sans-serif" y="25" x="75">FURNITURE</text>
+  <text fill="#8B4513" font-weight="bold" font-size="12" font-family="Arial, sans-serif" y="40" x="85">PLAZA</text>
+</svg>
