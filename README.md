@@ -191,9 +191,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-- **Email**: info@furnitureplaza.com
-- **Phone**: +1 (555) 123-4567
-- **Address**: 123 Furniture Street, Design District, NY 10001
+- **Email**: ashishjac4495@gmail.com
+- **Phone**: +91 9136300136
 
 ## 🙏 Acknowledgments
 
