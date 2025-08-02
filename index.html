@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Plaza - Premium Furniture Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader Section -->
+    <div class="loader-section" id="loader-section">
+        <div class="loader-container">
+            <div class="countdown" id="countdown">0 - 100</div>
+            <div class="line-container">
+                <div class="line-bold"></div>
+            </div>
+            <div class="main-text" id="main-text">
+                <div class="word" id="word1">YOUR</div>
+                <div class="word" id="word2">WEB EXPERIENCE</div>
+                <div class="word" id="word3">IS LOADING RIGHT <span class="now" id="now-text">NOW</span></div>
+            </div>
+
+            <div class="bottom-text">
+                Please wait<br>a few seconds.
+            </div>
+            <div class="line-container" style="margin-top: 1rem;">
+                <div class="line-thin"></div>
+            </div>
+        </div>
+        <div class="black-overlay" id="black-overlay"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="main-container">
+        <!-- Red Background Section -->
+        <div class="main-content" id="home">
+            <!-- Top Left Branding -->
+            <div class="branding">
+                <div class="logo-container">
+                    <img src="images/furniture-plaza-logo.svg" alt="Furniture Plaza" class="logo">
+                    <span class="brand-text">FURNITURE PLAZA</span>
+                </div>
+            </div>
+
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <div class="slide fade active">
+                    <img src="images/Slide1.jpg" alt="Modern Living Room Furniture Collection">
+                </div>
+                <div class="slide fade">
+                    <img src="images/Slide2.jpg" alt="Classic Wooden Chair Design">
+                </div>
+                <div class="slide fade">
+                    <img src="images/Slide3.jpg" alt="Golden Oska Sofa Collection">
+                </div>
+                <div class="slide fade">
+                    <img src="images/Slide4.jpg" alt="Chair and Sofa Category Display">
+                </div>
+                <div class="slide fade">
+                    <img src="images/Slide5.jpg" alt="Organic Stool with Natural Materials">
+                </div>
+                
+                <!-- Navigation dots -->
+                <div class="slideshow-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+    </div>
+    
+    <!-- Modern Navigation Bar -->
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#collections" class="mobile-nav-link">Collections</a>
+            <a href="#products" class="mobile-nav-link">Products</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#team" class="mobile-nav-link">Team</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+    </div>
+    
+    <section class="image-grid-section">
+        <div class="container">
+            <header class="header">
+                <h1>Furniture Collection</h1>
+                <p>Discover our curated selection of modern furniture and home decor</p>
+            </header>
+
+        <div class="image-grid">
+            <!-- Main featured image (large) with slideshow -->
+            <div class="grid-item featured">
+                <div class="image-container">
+                    <div class="featured-slideshow">
+                        <div class="slideshow-item active" data-slide="0">
+                            <img src="images/img5.jpg" alt="Modern Living Room Scene with Contemporary Furniture" class="main-image">
+                            <div class="image-overlay">
+                                <h3>Living Room Collection</h3>
+                                <p>Modern comfort meets timeless design</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item" data-slide="1">
+                            <img src="images/img1.jpg" alt="Elegant Wooden Chair with Classic Design" class="main-image">
+                            <div class="image-overlay">
+                                <h3>Classic Chair</h3>
+                                <p>Elegant wooden design</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item" data-slide="2">
+                            <img src="images/img2.jpg" alt="Golden Oska Sofa Premium Collection" class="main-image">
+                            <div class="image-overlay">
+                                <h3>Golden Oska Sofa</h3>
+                                <p>$250 - Premium comfort</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item" data-slide="3">
+                            <img src="images/img3.jpg" alt="Chair and Sofa Category Showcase" class="main-image">
+                            <div class="image-overlay">
+                                <h3>CHAIR & SOFA</h3>
+                                <p>Complete seating solutions</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item" data-slide="4">
+                            <img src="images/img4.jpg" alt="Organic Stool with Plant and Natural Materials" class="main-image">
+                            <div class="image-overlay">
+                                <h3>Organic Stool</h3>
+                                <p>Natural materials & design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slideshow controls -->
+                    <div class="slideshow-controls">
+                        <button class="slideshow-btn prev">‹</button>
+                        <div class="slideshow-dots">
+                            <span class="slideshow-dot active" data-slide="0"></span>
+                            <span class="slideshow-dot" data-slide="1"></span>
+                            <span class="slideshow-dot" data-slide="2"></span>
+                            <span class="slideshow-dot" data-slide="3"></span>
+                            <span class="slideshow-dot" data-slide="4"></span>
+                        </div>
+                        <button class="slideshow-btn next">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary images (medium) -->
+            <div class="grid-item medium">
+                <div class="image-container">
+                    <img src="images/Slide2.jpg" alt="Classic Wooden Chair with Elegant Design" class="grid-image">
+                    <div class="image-overlay">
+                        <h4>Classic Chair</h4>
+                        <p>Elegant wooden design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item medium">
+                <div class="image-container">
+                    <img src="images/Slide3.jpg" alt="Golden Oska Sofa Premium Furniture" class="grid-image">
+                    <div class="image-overlay">
+                        <h4>Golden Oska Sofa</h4>
+                        <p>$250</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small images -->
+            <div class="grid-item small">
+                <div class="image-container">
+                    <img src="images/Slide4.jpg" alt="Chair and Sofa Category Collection Display" class="grid-image">
+                    <div class="image-overlay">
+                        <h4>CHAIR & SOFA</h4>
+                        <button class="shop-btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item small">
+                <div class="image-container">
+                    <img src="images/Slide5.jpg" alt="Organic Stool with Natural Materials and Plant Decor" class="grid-image">
+                    <div class="image-overlay">
+                        <h4>Organic Stool</h4>
+                        <p>Natural materials</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="products-grid" id="productsGrid">
+                <!-- Product cards will be inserted here -->
+            </div>
+
+            <div class="cart-summary" id="cartSummary" style="display:none;">
+                <h2>Cart Summary</h2>
+                <ul class="cart-items" id="cartItems"></ul>
+                <div><strong>Total: $<span id="cartTotal">0.00</span></strong></div>
+                <button class="invoice-btn" id="downloadInvoiceBtn">Download Invoice</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Furniture Plaza</h2>
+                <div class="about-description">
+                    <p>Welcome to Furniture Plaza, your premier destination for high-quality, modern furniture that transforms spaces into beautiful, functional homes. Since our establishment, we've been committed to bringing you carefully curated collections that blend contemporary design with timeless elegance.</p>
+                    
+                    <p>Our passion lies in helping you create the perfect living environment. From luxurious sofas and elegant chairs to unique accent pieces, every item in our collection is selected for its exceptional quality, innovative design, and lasting durability.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <h4>Quality Craftsmanship</h4>
+                            <p>Each piece is made with premium materials and attention to detail</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Modern Design</h4>
+                            <p>Contemporary styles that complement any living space</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Customer Satisfaction</h4>
+                            <p>Your comfort and satisfaction are our top priorities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section-wrapper" id="team">
+        <div class="container">
+            <h1 class="team-title">Our Team</h1>
+            
+            <div class="team-section">
+                <div class="team-list">
+                    <div class="team-member" data-member="ashish">
+                        <span class="member-number">01</span>
+                        <span class="member-name">Ashish Choudhary</span>
+                        <span class="member-role">CEO & Founder</span>
+                        <div class="member-popup">
+                            <img src="images/ashish.jpg" alt="Ashish Choudhary" class="popup-image">
+                        </div>
+                    </div>
+                    
+                    <div class="team-member" data-member="saptarshi">
+                        <span class="member-number">02</span>
+                        <span class="member-name">Saptarshi Mahim</span>
+                        <span class="member-role">COO & Co-Founder</span>
+                        <div class="member-popup">
+                            <img src="images/Rishi.jpg" alt="Saptarshi Mahim" class="popup-image">
+                        </div>
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Grid Section -->
+    <section id="collections" class="collections-section">
+        <div class="container">
+            <h2 class="collections-title">Discover Our Collection</h2>
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+        <div class="grid-item"><img src="images/chair1.jpg" alt="Modern Chair Collection"/></div>
+        <div class="grid-item"><img src="images/sofa1.jpg" alt="Luxury Sofa Collection"/></div>
+        <div class="grid-item"><img src="images/chair2.jpg" alt="Elegant Chair Design"/></div>
+        <div class="grid-item"><img src="images/sofa2.jpg" alt="Contemporary Sofa"/></div>
+        <div class="grid-item"><img src="images/chair3.jpg" alt="Premium Chair"/></div>
+        <div class="grid-item"><img src="images/sofa3.jpg" alt="Designer Sofa"/></div>
+        <div class="grid-item"><img src="images/chair4.jpg" alt="Classic Chair"/></div>
+        <div class="grid-item"><img src="images/sofa4.jpg" alt="Comfort Sofa"/></div>
+        <div class="grid-item"><img src="images/pchair5.jpg" alt="Premium Chair Design"/></div>
+        <div class="grid-item"><img src="images/pchair6.jpg" alt="Exclusive Chair"/></div>
+
+        <!-- Duplicate for seamless scrolling -->
+        <div class="grid-item"><img src="images/chair1.jpg" alt="Modern Chair Collection"/></div>
+        <div class="grid-item"><img src="images/sofa1.jpg" alt="Luxury Sofa Collection"/></div>
+        <div class="grid-item"><img src="images/chair2.jpg" alt="Elegant Chair Design"/></div>
+        <div class="grid-item"><img src="images/sofa2.jpg" alt="Contemporary Sofa"/></div>
+        <div class="grid-item"><img src="images/chair3.jpg" alt="Premium Chair"/></div>
+        <div class="grid-item"><img src="images/sofa3.jpg" alt="Designer Sofa"/></div>
+        <div class="grid-item"><img src="images/chair4.jpg" alt="Classic Chair"/></div>
+        <div class="grid-item"><img src="images/sofa4.jpg" alt="Comfort Sofa"/></div>
+        <div class="grid-item"><img src="images/pchair5.jpg" alt="Premium Chair Design"/></div>
+                    <div class="grid-item"><img src="images/pchair6.jpg" alt="Exclusive Chair"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p class="contact-subtitle">Get in touch with our furniture experts</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Visit Our Showroom</h4>
+                                <p>123 Furniture Street<br>Design District, NY 10001</p>
+                            </div>
+                        </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <h4>Call Us</h4>
+                <p>+1 (555) 123-4567<br>Mon-Sat: 9AM-8PM</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <p>info@furnitureplaza.com<br>support@furnitureplaza.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Your Phone">
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="images/furniture-plaza-logo.svg" alt="Furniture Plaza" class="footer-logo-img">
+            <h3>FURNITURE PLAZA</h3>
+          </div>
+          <p>Transform your space with our premium furniture collections. Quality, style, and comfort in every piece.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">📸</a>
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📌</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Outdoor</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Care Instructions</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Furniture Plaza. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
